@@ -6,9 +6,10 @@
 const CONFIG = {
   instagram : "https://www.instagram.com/okinawa_ferry_forecast/",
 
-  // ② Booking.com アフィリエイト（手動キュレーション記事のリンク）
-  // 個別ホテルの実リンクは記事側の data-aff 属性で上書きできます。
-  booking_naha_search : "#",   // 那覇エリアの検索結果（日付つきディープリンク等）
+  // ② ホテル予約アフィリエイト（国内ASP：バリューコマースのExpedia/Hotels.com、
+  //    A8.netのAgoda 等。Booking.comは国内ASP終了のため非対象）。
+  //    個別ホテルの実リンクは記事側の data-href 属性で上書きできます。
+  hotel_search : "#",   // 那覇エリアの検索結果（日付つきディープリンク等）
 
   // ① 民泊 01_kucha-homestay
   homestay : "#",
@@ -27,10 +28,10 @@ const CONFIG = {
   ];
   byId.forEach(([id,url])=>applyLink(document.getElementById(id), url));
 
-  /* ---- リンク適用：data-aff="booking" を持つ全要素 ---- */
-  document.querySelectorAll('[data-aff="booking"]').forEach(el=>{
+  /* ---- リンク適用：data-aff="hotel" を持つ全要素 ---- */
+  document.querySelectorAll('[data-aff="hotel"]').forEach(el=>{
     // 記事側で data-href に個別ホテルリンクがあればそれを優先、無ければ共通の那覇検索
-    const url = el.getAttribute("data-href") || CONFIG.booking_naha_search;
+    const url = el.getAttribute("data-href") || CONFIG.hotel_search;
     applyLink(el, url);
   });
 

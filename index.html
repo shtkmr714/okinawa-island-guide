@@ -51,7 +51,20 @@
       <span class="en">📷 Daily ferry forecast</span><span class="ja">📷 毎日の欠航予報</span>
     </a>
   </div>
-</div></header>
+</div>
+  <div class="hero-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 170" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- distant islands -->
+      <path fill="#57CC99" opacity=".5" d="M0,118 q150,-46 300,-18 q150,28 320,-8 q170,-44 340,-6 q160,30 320,-18 q120,-30 160,-6 L1440,170 L0,170Z"/>
+      <!-- near island silhouette -->
+      <path fill="#2E9E5B" opacity=".85" d="M0,132 q120,-30 250,-12 q130,18 260,-6 q150,-34 300,-4 q150,26 300,-12 q120,-26 230,-4 L1440,170 L0,170Z"/>
+      <!-- aqua wave -->
+      <path fill="#CAF0F8" d="M0,142 q180,-26 360,-8 q180,20 360,-6 q180,-24 360,-4 q180,18 360,-8 L1440,170 L0,170Z"/>
+      <!-- foam base blends into page -->
+      <path fill="#F3FBFD" d="M0,156 q240,-14 480,0 q240,14 480,0 q240,-14 480,0 L1440,170 L0,170Z"/>
+    </svg>
+  </div>
+</header>
 
 <!-- ===== CATEGORIES ===== -->
 <section>
@@ -71,7 +84,7 @@
 </section>
 
 <!-- ===== ARTICLES ===== -->
-<section id="articles" style="background:linear-gradient(180deg,#fff,#eef4fb)">
+<section id="articles" class="bg-aqua">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Latest guides</div>
@@ -81,7 +94,7 @@
     <div class="grid">
       <!-- money article -->
       <a class="acard t-ferry" href="./articles/ferry-cancelled-naha-hotels.html">
-        <div class="thumb">⛴️</div>
+        <div class="thumb"><img src="./assets/img/ferry-zamami.jpg" alt="Ferry Zamami at Tomari Port, Naha" loading="lazy" /></div>
         <div class="b">
           <span class="ctag">Ferry · Where to stay</span>
           <h3><span class="en">Ferry cancelled? Best Naha hotels to stay tonight</span><span class="ja">フェリー欠航？今夜泊まる那覇のおすすめホテル</span></h3>
@@ -91,7 +104,7 @@
       </a>
       <!-- sample tourism article -->
       <a class="acard t-access" href="./articles/getting-to-kerama.html">
-        <div class="thumb">🚢</div>
+        <div class="thumb"><img src="./assets/img/highspeed-boat.jpg" alt="High-speed boat cruising to the Kerama Islands" loading="lazy" /></div>
         <div class="b">
           <span class="ctag">Islands · Access</span>
           <h3><span class="en">How to get to the Kerama Islands from Naha</span><span class="ja">那覇から慶良間諸島への行き方</span></h3>
@@ -114,25 +127,27 @@
 </section>
 
 <!-- ===== FERRY FORECAST FEATURE ===== -->
-<section id="ferry" class="ferry-feature" style="background:linear-gradient(160deg,var(--navy-800),var(--navy-900));color:#fff">
-  <div class="wrap" style="display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center">
+<section id="ferry" class="photo-feature">
+  <div class="bgimg" style="background-image:url('./assets/img/ferry-zamami.jpg')"></div>
+  <div class="overlay"></div>
+  <div class="wrap" style="display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding-top:64px;padding-bottom:64px">
     <div>
-      <div class="kicker" style="color:var(--gold)">A tool you won't find elsewhere</div>
+      <div class="kicker" style="color:var(--sun)">A tool you won't find elsewhere</div>
       <h2 style="font-size:clamp(23px,3.4vw,32px);font-weight:700;margin-top:8px;color:#fff">
         <span class="en">Will the ferry run tomorrow?</span><span class="ja">その船、明日は動く？</span>
       </h2>
-      <p style="color:var(--blue-100);margin-top:14px">
+      <p style="color:#eafaff;margin-top:14px">
         <span class="en">The Kerama routes have no alternative transport — if the boat stops, you're stuck. We forecast cancellation risk every morning from wave, wind and weather data, and post it on Instagram. Check before you travel.</span>
         <span class="ja">慶良間航路に代替交通はありません。船が止まれば足止め。波・風・気象データから毎朝、欠航リスクを予測しInstagramで配信しています。旅の前にチェックを。</span>
       </p>
       <div class="cta-row">
-        <a class="btn btn-gold" id="ctaInstagram2" href="#" target="_blank" rel="noopener" onclick="">@okinawa_ferry_forecast</a>
+        <a class="btn btn-gold" id="ctaInstagram2" href="#" target="_blank" rel="noopener">@okinawa_ferry_forecast</a>
         <a class="btn btn-ghost" href="./articles/ferry-cancelled-naha-hotels.html"><span class="en">If it's cancelled →</span><span class="ja">欠航したら →</span></a>
       </div>
     </div>
     <div>
-      <!-- risk scale visual -->
-      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(144,202,249,.18);border-radius:16px;padding:22px">
+      <!-- risk scale visual (frosted card over photo) -->
+      <div style="background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(6px);border-radius:16px;padding:22px">
         <div style="font-size:13px;color:var(--blue-200);margin-bottom:12px;font-family:var(--font-en)">CANCELLATION RISK SCALE</div>
         <div style="display:flex;flex-direction:column;gap:9px;font-size:13.5px">
           <div style="display:flex;gap:12px;align-items:center"><span style="background:var(--r-green);color:#fff;font-family:var(--font-num);font-weight:700;width:52px;text-align:center;border-radius:6px;padding:3px 0">0–10</span><span class="en">Low — likely normal</span><span class="ja">低い（ほぼ通常運航）</span></div>
