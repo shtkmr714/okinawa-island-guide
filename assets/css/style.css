@@ -56,8 +56,9 @@ body[data-lang="ja"] .en{display:none}
 /* ---------- Hero (bright ocean gradient + scene) ---------- */
 .hero{position:relative;background:linear-gradient(170deg,var(--deep) 0%,var(--lagoon) 48%,var(--aqua) 100%);color:#fff;padding:74px 0 110px;overflow:hidden}
 /* real Okinawa photo behind the hero, with a colored tint for text contrast */
-.hero-photo{position:absolute;inset:0;background-image:url('../img/hero-kerama.jpg');background-size:cover;background-position:center 38%;z-index:0}
-.hero-tint{position:absolute;inset:0;z-index:1;background:linear-gradient(115deg,rgba(7,59,76,.86) 0%,rgba(0,90,138,.62) 48%,rgba(0,150,198,.34) 100%)}
+.hero-photo{position:absolute;inset:0;background-image:url('../img/zamami-aerial.png');background-size:cover;background-position:center 42%;z-index:0}
+/* lighter scrim: dark enough on the left for text, bright turquoise on the right */
+.hero-tint{position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,rgba(7,59,76,.80) 0%,rgba(0,90,138,.46) 44%,rgba(72,202,228,.12) 100%)}
 .hero::before{content:"";position:absolute;top:-60px;right:6%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,var(--sun),rgba(255,201,60,.0) 70%);opacity:.85;z-index:1}
 .hero .wrap{position:relative;z-index:3}
 .eyebrow{display:inline-block;font-family:var(--font-en);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:999px;margin-bottom:22px}
