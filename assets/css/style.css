@@ -108,6 +108,29 @@ section{padding:60px 0}
 @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid{grid-template-columns:1fr}}
 
+/* ---------- Island cards (hubs) ---------- */
+.islands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.island-card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:200px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);text-decoration:none;color:#fff;transition:transform .18s,box-shadow .18s}
+.island-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.island-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.island-card .scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(7,59,76,.05),rgba(7,59,76,.78))}
+.island-card .txt{position:relative;z-index:2;padding:20px}
+.island-card h3{font-size:21px;margin-bottom:3px}
+.island-card .sub{font-size:12.5px;color:#e4f8ff;font-family:var(--font-en)}
+.island-card.soon{pointer-events:none}
+.island-card.soon .badge{position:absolute;top:12px;right:12px;z-index:2;background:var(--coral);color:#fff;font-family:var(--font-en);font-size:10px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:6px}
+.island-card.soon .bg{filter:grayscale(.4) brightness(.9)}
+@media(max-width:760px){.islands-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.islands-grid{grid-template-columns:1fr}}
+
+/* island hub key-facts strip */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 8px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;box-shadow:var(--shadow)}
+.fact .ic{font-size:24px}
+.fact .k{font-family:var(--font-en);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--lagoon);font-weight:700;margin-top:6px}
+.fact .v{font-size:14px;color:var(--navy-800);font-weight:600;margin-top:2px}
+@media(max-width:680px){.facts{grid-template-columns:1fr 1fr}}
+
 /* ---------- Article page ---------- */
 .article{padding:0 0 64px}
 .article-hero{position:relative;background:linear-gradient(165deg,var(--deep),var(--lagoon) 70%,var(--aqua));color:#fff;padding:56px 0 64px;overflow:hidden}

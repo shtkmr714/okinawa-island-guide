@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "zamami-island-guide",
+    "islands": ["zamami"],
+    "category_en": "Zamami · Overview",
+    "category_ja": "座間味・総合ガイド",
+    "title_en": "Zamami Island: the complete first-timer's guide",
+    "title_ja": "座間味島 完全ガイド（はじめての人へ）",
+    "excerpt_en": "Kerama Blue water, humpback whales and three little islands 40km off Naha. Everything you need to plan a Zamami trip.",
+    "excerpt_ja": "ケラマブルーの海、ザトウクジラ、那覇から40kmの3つの島。座間味の旅を計画するための全部。",
+    "thumb": "assets/img/zamami-aerial.png",
+    "thumb_class": "t-access",
+    "date": "2026-06-27"
+  },
+  {
+    "slug": "zamami-beaches-snorkeling",
+    "islands": ["zamami"],
+    "category_en": "Zamami · Beaches",
+    "category_ja": "座間味・ビーチ",
+    "title_en": "Zamami's best beaches: Furuzamami & Ama snorkeling",
+    "title_ja": "座間味のベストビーチ：古座間味＆阿真でシュノーケル",
+    "excerpt_en": "Two beaches, two moods — coral and tropical fish at Furuzamami, gentle sea turtles at Ama. How to enjoy both.",
+    "excerpt_ja": "性格の違う2つのビーチ。古座間味はサンゴと熱帯魚、阿真はウミガメ。両方の楽しみ方。",
+    "thumb": "assets/img/beach-zamami.png",
+    "thumb_class": "t-beach",
+    "date": "2026-06-27"
+  },
+  {
+    "slug": "zamami-whale-watching",
+    "islands": ["zamami"],
+    "category_en": "Zamami · Activities",
+    "category_ja": "座間味・アクティビティ",
+    "title_en": "Whale watching in Zamami (January–March)",
+    "title_ja": "座間味のホエールウォッチング（1〜3月）",
+    "excerpt_en": "Every winter humpback whales return to the Kerama waters to breed. When to go, what to expect, and how to book.",
+    "excerpt_ja": "毎冬、ザトウクジラが繁殖のため慶良間の海に戻ります。時期・見どころ・予約方法。",
+    "thumb": "assets/img/hero-kerama.jpg",
+    "thumb_class": "t-ferry",
+    "date": "2026-06-27"
+  },
+  {
+    "slug": "getting-to-kerama",
+    "islands": ["zamami", "aka"],
+    "category_en": "Islands · Access",
+    "category_ja": "離島・アクセス",
+    "title_en": "How to get to the Kerama Islands from Naha",
+    "title_ja": "那覇から慶良間諸島への行き方",
+    "excerpt_en": "Ferries, high-speed boats, tickets and timetables for Zamami and Aka — everything a first-timer needs.",
+    "excerpt_ja": "座間味・阿嘉へのフェリー／高速船・チケット・時刻表。初めての人向けに全部まとめました。",
+    "thumb": "assets/img/asa-port.jpg",
+    "thumb_class": "t-access",
+    "date": "2026-06-20"
+  },
+  {
+    "slug": "ferry-cancelled-naha-hotels",
+    "islands": ["all"],
+    "category_en": "Ferry · Where to stay",
+    "category_ja": "フェリー・宿",
+    "title_en": "Ferry cancelled? Best Naha hotels to stay tonight",
+    "title_ja": "フェリー欠航？今夜泊まる那覇のおすすめホテル",
+    "excerpt_en": "No boats to the Kerama Islands today? Here's where to rebook a comfortable night in Naha — and how to plan around it.",
+    "excerpt_ja": "今日は慶良間行きが欠航？那覇で快適に泊まり直せる宿と、予定の立て直し方。",
+    "thumb": "assets/img/ferry-zamami.jpg",
+    "thumb_class": "t-ferry",
+    "date": "2026-06-24"
+  }
+]
