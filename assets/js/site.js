@@ -47,6 +47,11 @@ const CONFIG = {
     }
   }
 
+  /* 残ったプレースホルダ（href="#" の .ph）も誤遷移しないようガード */
+  document.querySelectorAll('a.ph[href="#"]').forEach(el=>{
+    el.addEventListener("click", e=>e.preventDefault());
+  });
+
   /* ---- 言語切替（英語デフォルト・localStorage 保持） ---- */
   const body = document.body;
   const saved = localStorage.getItem("oig_lang");
